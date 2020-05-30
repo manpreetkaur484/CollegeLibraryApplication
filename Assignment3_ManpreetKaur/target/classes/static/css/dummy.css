@@ -1,0 +1,32 @@
+body {
+	background-image: url("../image/s1.jpg");
+	background-size: 1598px 800px;
+	backgound-repeat: no-repeat;
+}
+
+h1 {
+	margin-top: 200px;
+	margin-left: 200px;
+	padding: 50px;
+	background-image: linear-gradient(to bottom right, #4169E1, #D3D3D3);
+	color: white;
+	height: 100px;
+	width: 25%;
+}
+
+#button {
+	margin-top: 30px;
+	margin-left: 30px;
+	background-color: #4169E1;
+	color: white;
+	height: 40px;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#button:hover {
+	background-color: #D3D3D3;
+	border: 2px solid #4169E1;
+	color: black;
+}

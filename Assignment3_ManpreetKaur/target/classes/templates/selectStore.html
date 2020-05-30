@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Select Book Store</title>
+
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/css/mycss.css" th:href="@{/css/selectStore.css}" />
+</head>
+<body>
+
+	<div class="main">
+
+		<div id="heading">
+			<h1 align="center">Welcome to Sheridan Book Store</h1>
+		</div>
+		<div id="left">
+			<form method="get" action="/selectStore">
+				<div id="row">
+					Select Location: <select
+						"src/main/resources/templates/selectStore.html" name="store"
+						size="1">
+						<option value="Oakville">Oakville</option>
+						<option value="Brampton">Brampton</option>
+						<option value="Mississauga">Mississauga</option>
+					</select>
+				</div>
+
+				<div id="pick">
+					<input id="store" type="SUBMIT" value="Go To Store" />
+				</div>
+			</form>
+
+			<div id="view">
+				<form method="get" action="/view">
+					<input id="vb" type="Submit" value="View Books" />
+				</form>
+			</div>
+
+			<div id="search">
+				<form method="get" action="/searchPage">
+					<input id="sb" type="SUBMIT" value="Search Books" />
+				</form>
+			</div>
+
+			<div id="generate">
+				<form method="get" action="/dummyRecords">
+					<input id="gb" type="SUBMIT" value="Generate Dummy Records" />
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

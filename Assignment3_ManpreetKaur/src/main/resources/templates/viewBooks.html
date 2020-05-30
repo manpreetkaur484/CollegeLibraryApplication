@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Books</title>
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/css/viewBook.css" th:href="@{/css/viewBook.css}" />
+</head>
+
+<body>
+	<div id="top">
+		<p id="left"><a th:href="@{/}">Go to Home Page</a></p>
+		<p id="right"><a th:href="@{/search}">Search Books</a></p>
+	</div>
+
+	<div align="center">
+		<h1>Brampton Store Books List</h1>
+		<table id="brampton">
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Courses</th>
+				<th>Edit</th>
+				<th>Delete</th>
+				<th>Purchase</th>
+			</tr>
+			<tr th:each="brampton : ${bramptonBook}">
+				<td th:text="${brampton.id}"></td>
+				<td th:text="${brampton.title}"></td>
+				<td th:text="${brampton.author}"></td>
+				<td th:text="${brampton.price}"></td>
+				<td th:text="${brampton.inventory}"></td>
+				<td th:text="${brampton.courseList}"></td>
+				<td><a href=""
+					th:href="@{/edit/brampton/{id}(id=${brampton.id})}">EDIT </a></td>
+				<td><a href="" th:href="@{/delete/{id}(id=${brampton.id})}">DELETE</a></td>
+				<td><span th:if="${brampton.inventory}"> <a href=""
+						th:href="@{/purchase/brampton/{id}(id=${brampton.id})}">Purchase</a>
+				</span> <span th:unless="${brampton.inventory}">Sorry!, no inventory</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<div align="center">
+		<h1>Mississauga Store Books List</h1>
+		<table id="mississauga">
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Courses</th>
+				<th>Edit</th>
+				<th>Delete</th>
+				<th>Purchase</th>
+			</tr>
+			<tr th:each="mississauga : ${mississaugaBook}">
+				<td th:text="${mississauga.id}"></td>
+				<td th:text="${mississauga.title}"></td>
+				<td th:text="${mississauga.author}"></td>
+				<td th:text="${mississauga.price}"></td>
+				<td th:text="${mississauga.inventory}"></td>
+				<td th:text="${mississauga.courseList}"></td>
+				<td><a href=""
+					th:href="@{/edit/mississauga/{id}(id=${mississauga.id})}">EDIT
+				</a></td>
+				<td><a href="" th:href="@{/delete/{id}(id=${mississauga.id})}">DELETE</a></td>
+				<td><span th:if="${mississauga.inventory}"> <a href=""
+						th:href="@{/purchase/mississauga/{id}(id=${mississauga.id})}">Purchase</a>
+				</span> <span th:unless="${mississauga.inventory}">Sorry!, no
+						inventory</span></td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+	<div align="center">
+		<h1>Oakville Store Books List</h1>
+		<table id="oakville">
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Courses</th>
+				<th>Edit</th>
+				<th>Delete</th>
+				<th>Purchase</th>
+			</tr>
+			<tr th:each="oakville : ${oakvilleBook}">
+				<td th:text="${oakville.id}"></td>
+				<td th:text="${oakville.title}"></td>
+				<td th:text="${oakville.author}"></td>
+				<td th:text="${oakville.price}"></td>
+				<td th:text="${oakville.inventory}"></td>
+				<td th:text="${oakville.courseList}"></td>
+				<td><a href=""
+					th:href="@{/edit/oakville/{id}(id=${oakville.id})}">EDIT </a></td>
+				<td><a href="" th:href="@{/delete/{id}(id=${oakville.id})}">DELETE</a></td>
+				<td><span th:if="${oakville.inventory}"> <a href=""
+						th:href="@{/purchase/oakville/{id}(id=${oakville.id})}">Purchase</a>
+				</span> <span th:unless="${oakville.inventory}">Sorry!, no inventory</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</body>
+
+</html>

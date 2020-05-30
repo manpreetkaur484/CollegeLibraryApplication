@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Brampton Books</title>
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/css/add.css" th:href="@{/css/add.css}" />
+</head>
+<body>
+
+	<div id="heading">
+		<h1>Edit Book</h1>
+	</div>
+	<div id="form1">
+		<form action="/modify" method="GET" name="form" id="formtext">
+			<input type="hidden" name="id" th:value="${brampton.id}"> 
+			<input type="hidden" name="location" th:value="Brampton" /> 
+			
+			<label for="title">Title</label>  
+			  <input type="text" name="title" id="title" th:value="${brampton.title}" title="Please fill the title of the book" placeholder="Enter title here" /> 
+			  
+			  <label for="author">Author</label>
+			<input type="text" name="author" id="author" th:value="${brampton.author}" title="Please fill author's name" placeholder="Enter auhtor name here" />
+				
+				 <label for="price">Price</label>
+			<input type="text" name="price" id="price" th:value="${brampton.price}" title="Please enter valid price" placeholder="Enter price here" />
+			
+			 <label for="inventory">Quantity</label>
+			<input type="number" name="inventory" id="inventory" th:value="${brampton.inventory}" title="Please enter number only" placeholder="Enter quantity here" />
+				
+				 <label for="courses">Courses</label>
+			<input type="text" name="courses" id="courses"  title="Please fill related course list" th:value="${brampton.courseList}" placeholder="Enter first course here" />
+
+			<div id="send">
+				<input type="submit" value="Edit Book" />
+			</div>
+		</form>
+
+		<div id="view">
+			<form method="get" action="/view">
+				<input id="vb" type="Submit" value="View Books" />
+			</form>
+		</div>
+
+		<div id="search">
+			<form method="get" action="/searchPage">
+				<input id="sb" type="SUBMIT" value="Search Books" />
+			</form>
+		</div>
+
+		<div id="home">
+			<form method="get" action="/">
+				<input type="SUBMIT" value="Go to Home" />
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

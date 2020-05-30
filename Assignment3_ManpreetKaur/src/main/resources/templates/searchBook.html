@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Books</title>
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/css/search.css" th:href="@{/css/search.css}" />
+</head>
+<body>
+
+	<div id="heading">
+		<h1>Search Books using Links</h1>
+	</div>
+	<div id="left">
+
+		<table>
+			<tr>
+				<td><a th:href="@{idSearch}">Search By ID</a></td>
+			</tr>
+			<tr>
+				<td><a th:href="@{titleSearch}">Search By Title</a></td>
+			</tr>
+
+			<tr>
+				<td><a th:href="@{auhtorSearch}">Search By Author</a></td>
+			</tr>
+
+			<tr>
+				<td><a th:href="@{courseSearch}">Search By Course</a></td>
+			</tr>
+
+			<tr>
+				<td><a th:href="@{quantitySearch}">Search By Quantity</a></td>
+			</tr>
+
+			<tr>
+				<td><a th:href="@{/}">Go to Home Page</a></td>
+			</tr>
+
+		</table>
+	</div>
+</body>
+</html>

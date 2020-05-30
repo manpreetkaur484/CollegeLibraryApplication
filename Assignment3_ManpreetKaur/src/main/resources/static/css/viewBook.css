@@ -1,0 +1,139 @@
+body {
+	background-color: #DCDCDC;
+}
+
+#brampton th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #87CEFA;
+	color: white;
+}
+
+#brampton {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 96%;
+}
+
+#brampton td, #brampton th {
+	border: 1px solid black;
+}
+
+#brampton th {
+	text-align: left;
+	padding: 8px;
+}
+
+#brampton td {
+	text-align: left;
+	padding: 8px;
+}
+
+#brampton tr:nth-child(odd) {
+	background-color: #87CEFA;
+}
+
+#brampton tr:nth-child(even) {
+	background-color: white;
+}
+
+#mississauga th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #87CEFA;
+	color: white;
+}
+
+#mississauga {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 96%;
+}
+
+#mississauga td, #mississauga th {
+	border: 1px solid black;
+}
+
+#mississauga th {
+	text-align: left;
+	padding: 8px;
+}
+
+#mississauga td {
+	text-align: left;
+	padding: 8px;
+}
+
+#mississauga tr:nth-child(odd) {
+	background-color: #87CEFA;
+}
+
+#mississauga tr:nth-child(even) {
+	background-color: white;
+}
+
+#oakville th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #87CEFA;
+	color: white;
+}
+
+#oakville {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 96%;
+}
+
+#oakville td, #oakville th {
+	border: 1px solid black;
+}
+
+#oakville th {
+	text-align: left;
+	padding: 8px;
+}
+
+#oakville td {
+	text-align: left;
+	padding: 8px;
+}
+
+#oakville tr:nth-child(odd) {
+	background-color: #87CEFA;
+}
+
+#oakville tr:nth-child(even) {
+	background-color: white;
+}
+
+#left {
+	position: absolute;
+	text-align: left;
+	margin-top: 15px;
+}
+
+#right {
+	text-align: right;
+	margin-top: 2%;
+}
+
+#left, #right {
+	color: white;
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#top {
+	background-image: linear-gradient(to bottom right, #87CEFA, white);
+	margin: 5px 10px 5px 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	text-align: center;
+	height: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Oakville Book Store</title>
+<link rel="stylesheet" type="text/css" media="all"
+	href="../static/css/store.css" th:href="@{/css/store.css}" />
+</head>
+<body>
+
+	<div id="heading">
+		<h1 align="center">Welcome to Oakville Store</h1>
+	</div>
+	<div id="left">
+		<div id="book">
+			<br> <br>
+			<form action="/addBooks">
+				<center>
+					<input type="hidden" name="location" th:value="Oakville" /> <input
+						type="submit" value="Add Books to Oakville Store">
+				</center>
+			</form>
+		</div>
+		<div id="view">
+			<form method="get" action="/view">
+				<center>
+					<input id="vb" type="Submit" value="View Books" />
+				</center>
+			</form>
+		</div>
+
+		<div id="search">
+			<form method="get" action="/searchPage">
+				<center>
+					<input id="sb" type="SUBMIT" value="Search Books" />
+				</center>
+			</form>
+		</div>
+		<div id="home">
+			<form method="get" action="/">
+				<center>
+					<input type="SUBMIT" value="Go to Home" />
+				</center>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
